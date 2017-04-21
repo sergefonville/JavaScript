@@ -38,7 +38,7 @@ JSON["parse"] = function(string) {
 	return (new Function ('return ' + string))()
 };
 
-JSON['stringify'] = function(object) {    
+JSON['stringify'] = function(object) {
     if(object instanceof Array)
         return JSON['stringifyArray'](object)
     if(object instanceof Object)
